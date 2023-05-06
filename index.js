@@ -29,14 +29,17 @@ client.on("ready", () => {
 client.on("guildMemberAdd", async(member) => {
     const Discord = require('discord.js');
     const Canvas = require("canvas");
+    const { registerFont } = require("canvas")
     const canvas = Canvas.createCanvas(1028, 468);
     const ctx = canvas.getContext("2d");
+
+    registerFont("Milky-Honey.ttf", { family: "Milky Honey" })
     
     const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/1061773400336519179/1104203648701038643/welcome.jpg");
     ctx.drawImage(background, 0 , 0, canvas.width, canvas.height);
     ctx.textAlign = 'center';
     ctx.fillStyle = '#ffffff';
-    ctx.font = "60px Arial";
+    ctx.font = `60px Milky Honey`;
     ctx.fillText(`${member.user.username}`, 514, 400);
     ctx.textAlign = 'center';
     ctx.beginPath();
