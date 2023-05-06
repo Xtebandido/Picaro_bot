@@ -1,0 +1,17 @@
+{
+  "name": "picaro_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "canvas": "^2.11.2",
+    "discord.js": "^14.9.0",
+    "request": "^2.88.2"
+  }
+}
